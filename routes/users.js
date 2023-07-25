@@ -10,6 +10,9 @@ const router = express.Router();
 
 //read
 
+
+
+
 router.get("/:id",verifyToken,getUser)
 router.get(":id/friends",verifyToken,getUserFriends)
 
